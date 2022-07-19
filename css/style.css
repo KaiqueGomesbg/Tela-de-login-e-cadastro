@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0; 
+   font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-image: url(https://professor-falken.com/wp-content/uploads/2017/11/Como-cambiar-la-imagen-de-fondo-del-inicio-de-sesion-en-tu-Mac-professor-falken.com_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top:140px;
+}
+
+.card{
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 3px 0px #00000080;
+width: 400px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(34, 50, 61)
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #00000080;
+    background-color: transparent;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    outline: none;
+
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #000000;
+}
+
+.label-float label{
+    color: #000000;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label
+{
+
+    font-size: 13px;
+    margin-top: 0;
+    color: #2a46a080;
+}
+
+button{
+    margin-right: 10px;
+    background-color: transparent;
+    border-color: #000000;
+    color: #000000;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 4%;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease-out;
+}
+
+button:hover{
+    background-color: #000000;
+    color:aliceblue
+    
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: 55px;
+    width: 70%;
+    box-sizing:border-box;
+}
+
+p{
+    color: #000000;
+    font-size: 14pt;
+    text-align: center;
+}
+
+a{
+    color: #6697cf;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+a:hover{
+    color: #000000;
+    
+}
+
+.fa-eye{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor:pointer
+}
