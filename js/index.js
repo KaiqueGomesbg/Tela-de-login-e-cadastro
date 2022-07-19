@@ -1,25 +1,12 @@
-
-
-var nome = document.querySelector("#name").focus()
-var labelNome = document.querySelector("#labelname")
-let validNome = false
-
-let usuario = document.querySelector('#suario')
-let labelusuario = documet.querySelector('#labelusuario')
-
-
-let password = document.querySelector('#password')
-let labelpassword = documet.querySelector('#labelpassword')
-
-let confirmpassword = document.querySelector('#confirmpassword')
-let labelconpassconfirm = documet.querySelector('#labelconpassconfirm')
-
-
+ validName = false
+ validUsuario = false
+ validpassowrd = false
+ validpasswordCOnfirm = false
 
 nome.addEventListener('keyup', () => {
   if(nome.value.length <= 2){
     labelNome.setAttribute('style', 'color: red')
-    labelNome.innerHTML = 'Nome *Insira no minimo 3 caracteres'
+    labelNome.innerHTML = 'Nome *Insira no minimmo 3 caracteres'
     nome.setAttribute('style', 'border-color: red')
     validNome = false
   } else {
@@ -30,6 +17,47 @@ nome.addEventListener('keyup', () => {
   }
 })
 
+usuario.addEventListener('keyup', () => {
+  if(usuario.value.length <= 2){
+    labelUsuario.setAttribute('style', 'color: red')
+    labelUsuario.innerHTML = 'Usuario *Insira no minimmo 3 caracteres'
+    usuario.setAttribute('style', 'border-color: red')
+    validUsuario = false
+  } else {
+    labelUsuario.setAttribute('style', 'color: green')
+    labelUsuario.innerHTML = 'Usuario'
+    usuario.setAttribute('style', 'border-color: green')
+    validUsuario = true
+  }
+})
+
+password.addEventListener('keyup', () => {
+  if(password.value.length <= 4){
+    labelpassword.setAttribute('style', 'color: red')
+    labelpassword.innerHTML = 'Senha *Insira no minimmo 5 caracteres'
+    password.setAttribute('style', 'border-color: red')
+    validpassowrd = false
+  } else {
+    labelpassword.setAttribute('style', 'color: green')
+    labelpassword.innerHTML = 'Senha'
+    password.setAttribute('style', 'border-color: green')
+    validpassowrd = true
+  }
+})
+
+confirmpassword.addEventListener('keyup', () => {
+  if(password.value != confirmpassword.value){
+    labelconpassconfirm.setAttribute('style', 'color: red')
+    labelconpassconfirm.innerHTML = 'Confirme sua senha *Insira no minimmo 5 caracteres'
+    confirmpassword.setAttribute('style', 'border-color: red')
+    validpassowrd = false
+  } else {
+    labelconpassconfirm.setAttribute('style', 'color: green')
+    labelconpassconfirm.innerHTML = 'confirme sua senha'
+    confirmpassword.setAttribute('style', 'border-color: green')
+    validpassowrd = true
+  }
+})
 
 
 

@@ -7,35 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="css/styleCadastro.css" media="screen" />
-    <script src="js/index.js"></script>
+    
 </head>
 <body>
     
+
 <div class="container">
     <flex-grow><flex-shrink><flex-basis>
+        
 <div class="card">
     <h1>Cadastrar </h1>
+    
+    
+
 
     <div class="label-float" >
-        <input type="text" id="name" placeholder="" required value="name">
-        <label id="labelname" for="name" value="labelname">Nome: </label>
+        <input type="text" id="nome" placeholder="" required>
+        <label id="labelNome" for="">Nome: </label>
     </div>
 
     <div class="label-float">
         <input type="text" id="usuario" placeholder="" required>
-        <label id="labelusuario" for="usuario">Usuario:</label>
+        <label id="labelUsuario" for="">Usuario:</label>
     </div>
 
     <div class="label-float">
         <input type="password" id="password" placeholder="" required>
-        <label id="labelpassword" for="password">Senha:</label>
+        <label id="labelpassword" for="">Senha:</label>
         <i id="verSenha" class="fa fa-eye" aria-hidden="true" onclick="showPasscadastro()"></i>
     </div>
 
     <div class="label-float">
         <input type="password" id="confirmpassword" placeholder="" required >
-        <label id="labelconpassconfirm" for="confirmpassword">Confirma Senha:</label>
+        <label id="labelconpassconfirm" for="">Confirma Senha:</label>
         <i id="verSenha" class="fa fa-eye" aria-hidden="true" onclick="showPassConfirm()"></i>
     </div>
 
@@ -61,6 +65,7 @@
    </div>
 
 </div>
-
+<link rel="stylesheet" type="text/css" href="css/styleCadastro.css" media="screen" />
+    <script src="js/index.js"></script>
 </body>
 </html>
