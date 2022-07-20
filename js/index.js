@@ -90,7 +90,27 @@ function showPasscadastro() { // show pass input password  cadastro
  } 
 
  function cadastrar(){
+
+
   if(validNome && validUsuario && validpassoword && validpasswordConfirm){
+
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+    
+    listaUser.push(
+    {
+      nomeCad: nome.value,
+      userCad: usuario.value,
+      senhaCad: password.value
+    }
+    )
+    
+    localStorage.setItem('listaUser', JSON.stringify(listaUser))
+
+setTimeout(()=> {
+  window.location.href='index.html'
+
+}, 3000)
+
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
     msgError.setAttribute('style', 'display: none')
