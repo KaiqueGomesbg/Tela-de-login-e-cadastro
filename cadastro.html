@@ -11,15 +11,13 @@
 </head>
 <body>
     
-
 <div class="container">
-    <flex-grow><flex-shrink><flex-basis>
         
 <div class="card">
     <h1>Cadastrar </h1>
-    
-    
 
+    <div id='msgError'></div>
+    <div id='msgSuccess'></div>
 
     <div class="label-float" >
         <input type="text" id="nome" placeholder="" required>
@@ -32,7 +30,7 @@
     </div>
 
     <div class="label-float">
-        <input type="password" id="password" placeholder="" required>
+        <input type="password" id="password" placeholder=""  required>
         <label id="labelpassword" for="">Senha:</label>
         <i id="verSenha" class="fa fa-eye" aria-hidden="true" onclick="showPasscadastro()"></i>
     </div>
